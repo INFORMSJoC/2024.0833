@@ -43,6 +43,7 @@ The structure of this repository is as follows:
 - `KBSA.py`: The code of the proposed kernel-based stochastic approximation (KBSA) algorithm.
 - `implementation/`: The directory containing implementation examples.
 - `results/`: The directory storing results for independent replications of the algorithm.
+  - `results/figures/`: The directory storing figures included in the paper.
 
 ## Requirements
 The code is tested in the environment of python 3.12.4 with Windows 11.  
@@ -55,5 +56,5 @@ e.g., `toy3.pkl`, are compressed and split;
 please download, combine, and extract the files into the `results/` directory, before previewing them.
 
 ## Results
-We provide detailed implementation guidances and demonstrate results 
+We provide detailed implementation guidances and demonstrate some results 
 in the `implementation/` directory. 
