@@ -51,5 +51,5 @@ Numerous package requirements exist, including but not limited to:
 `random`, `itertools`, `math`, `pickle`, `joblib`, `seaborn`, and `statsmodels`.
 
 To meet GitHub's file size limit, in the `results/` directory, dataset files, 
-e.g., `toy3.pkl` and `toy3_20d.pkl`, are compressed; 
-please download and extract the files into the `results/` directory, before previewing.
+e.g., `toy3.pkl` and `toy3_20d.pkl`, are compressed and split; 
+please download, combine, and extract the files into the `results/` directory, before previewing them.
