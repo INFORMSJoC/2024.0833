@@ -42,7 +42,7 @@ including black-box and streaming data scenarios.
 The structure of this repository is as follows:
 - `KBSA.py`: The code of the proposed kernel-based stochastic approximation (KBSA) algorithm.
 - `implementation/`: The directory containing implementation examples.
-- 'results/': The directory storing results for independent replications of the algorithm.
+- `results/`: The directory storing results for independent replications of the algorithm.
 
 ## Requirements
 The code is tested in the environment of python 3.12.4 with Windows 11.  
@@ -51,5 +51,5 @@ Numerous package requirements exist, including but not limited to:
 `random`, `itertools`, `math`, `pickle`, `joblib`, `seaborn`, and `statsmodels`.
 
 To meet GitHub's file size limit, in the `results/` directory, dataset files, 
-e.g., `toy3.pkl` and `toy3_20d.pkl`, are compressed; please download and extract  
-the files into the `results/` directory, before previewing.
+e.g., `toy3.pkl` and `toy3_20d.pkl`, are compressed; 
+please download and extract the files into the `results/` directory, before previewing.
