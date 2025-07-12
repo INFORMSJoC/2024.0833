@@ -7,101 +7,49 @@ Computing](https://pubsonline.informs.org/journal/ijoc) under the [MIT License](
 
 The software and data in this repository are a snapshot of the software and data
 that were used in the research reported on in the paper 
-[This is a Template](https://doi.org/10.1287/ijoc.2019.0000) by T. Ralphs. 
-The snapshot is based on 
-[this SHA](https://github.com/tkralphs/JoCTemplate/commit/f7f30c63adbcb0811e5a133e1def696b74f3ba15) 
-in the development repository. 
-
-**Important: This code is being developed on an on-going basis at 
-https://github.com/tkralphs/JoCTemplate. Please go there if you would like to
-get a more recent version or would like support**
+[Black-Box CoVaR and Its Gradient Estimation](https://doi.org/10.1287/ijoc.2024.0833) by Hao Cao, Jian-Qiang Hu, and Jiaqiao Hu. 
 
 ## Cite
 
 To cite the contents of this repository, please cite both the paper and this repo, using their respective DOIs.
 
-https://doi.org/10.1287/ijoc.2019.0000
+https://doi.org/10.1287/ijoc.2024.0833
 
-https://doi.org/10.1287/ijoc.2019.0000.cd
+https://doi.org/10.1287/ijoc.2024.0833.cd
 
 Below is the BibTex for citing this snapshot of the repository.
 
 ```
-@misc{CacheTest,
-  author =        {T. Ralphs},
+@misc{cao2025,
+  author =        {Hao Cao and Jian-Qiang Hu and Jiaqiao Hu},
   publisher =     {INFORMS Journal on Computing},
-  title =         {{CacheTest}},
-  year =          {2020},
-  doi =           {10.1287/ijoc.2019.0000.cd},
-  url =           {https://github.com/INFORMSJoC/2019.0000},
-  note =          {Available for download at https://github.com/INFORMSJoC/2019.0000},
+  title =         {{Black-Box CoVaR and Its Gradient Estimation}},
+  year =          {2025},
+  doi =           {10.1287/ijoc.2024.0833.cd},
+  url =           {https://github.com/INFORMSJoC/2024.0833},
+  note =          {Available for download at https://github.com/INFORMSJoC/2024.0833},
 }  
 ```
 
 ## Description
 
-The goal of this software is to demonstrate the effect of cache optimization.
+The goal of this software is to demonstrate a stochastic approximation algorithm 
+for CoVaR and its gradient estimation, which is applicable in various complicated cases, 
+including black-box and streaming data scenarios.
 
-## Building
+## Structure
 
-In Linux, to build the version that multiplies all elements of a vector by a
-constant (used to obtain the results in [Figure 1](results/mult-test.png) in the
-paper), stepping K elements at a time, execute the following commands.
+The structure of this repository is as follows:
+- `KBSA.py`: The code of the proposed kernel-based stochastic approximation (KBSA) algorithm.
+- `implementation/`: The directory containing implementation examples.
+- 'results/': The directory storing results for independent replications of the algorithm.
 
-```
-make mult
-```
+## Requirements
+The code is tested in the environment of python 3.12.4 with Windows 11.  
+Numerous package requirements exist, including but not limited to: 
+`numpy`, `pandas`, `matplotlib`, `scipy`, `operator`, `IPython`, 
+`random`, `itertools`, `math`, `pickle`, `joblib`, `seaborn`, and `statsmodels`.
 
-Alternatively, to build the version that sums the elements of a vector (used
-to obtain the results [Figure 2](results/sum-test.png) in the paper), stepping K
-elements at a time, do the following.
-
-```
-make clean
-make sum
-```
-
-Be sure to make clean before building a different version of the code.
-
-## Results
-
-Figure 1 in the paper shows the results of the multiplication test with different
-values of K using `gcc` 7.5 on an Ubuntu Linux box.
-
-![Figure 1](results/mult-test.png)
-
-Figure 2 in the paper shows the results of the sum test with different
-values of K using `gcc` 7.5 on an Ubuntu Linux box.
-
-![Figure 1](results/sum-test.png)
-
-## Replicating
-
-To replicate the results in [Figure 1](results/mult-test), do either
-
-```
-make mult-test
-```
-or
-```
-python test.py mult
-```
-To replicate the results in [Figure 2](results/sum-test), do either
-
-```
-make sum-test
-```
-or
-```
-python test.py sum
-```
-
-## Ongoing Development
-
-This code is being developed on an on-going basis at the author's
-[Github site](https://github.com/tkralphs/JoCTemplate).
-
-## Support
-
-For support in using this software, submit an
-[issue](https://github.com/tkralphs/JoCTemplate/issues/new).
+To meet GitHub's file size limit, in the `results/` directory, dataset files, 
+e.g., `toy3.pkl` and `toy3_20d.pkl`, are compressed; please download and extract  
+the files into the `results/` directory, before previewing.
