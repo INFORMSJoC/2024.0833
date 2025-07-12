@@ -51,10 +51,14 @@ Numerous package requirements exist, including but not limited to:
 `numpy`, `pandas`, `matplotlib`, `scipy`, `operator`, `IPython`, 
 `random`, `itertools`, `math`, `pickle`, `joblib`, `seaborn`, and `statsmodels`.
 
-To meet GitHub's file size limit, in the `results/` directory, raw data files, 
-e.g., `toy3.pkl`, are compressed and split; 
-please download, combine, and extract the files into the `results/` directory, before previewing them.
+To meet GitHub's file size limit, in the `results/` directory, raw output data files, 
+e.g., `toy3.pkl`, are compressed and split. 
+Please download, combine, and extract the files into the `results/` directory, 
+before previewing or analyzing them.
 
 ## Results
-We provide detailed implementation guidances and demonstrate some results 
+We provide detailed implementation guidances and demonstrate results 
 in the `implementation/` directory. 
+
+To meet GitHub's file size limit, more raw output data files, for robustness checks, 
+are stored at https://zenodo.org/records/15868830.
