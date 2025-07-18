@@ -58,7 +58,8 @@ before previewing or analyzing them.
 
 ## Results
 We provide detailed implementation guidances and demonstrate results 
-in the `scripts/` directory. It suffices just to run each notebook, possibly cell by cell. 
+in the `scripts/` directory. It suffices just to run each notebook (you can execute cells individually). 
+We have generated all the data used in the paper——no external data sources are required. 
 - `Toy_2D.ipynb` and `Toy_20D.ipynb`: The python notebooks containing implementation guidances
 for reproducing the results in the **toy examples**;
 - `portfolio_negative.ipynb` and `portfolio_positive.ipynb`: The python notebooks containing implementation guidances
