@@ -47,9 +47,11 @@ The structure of this repository is as follows:
 
 ## Requirements
 The code is tested in the environment of python 3.12.4 with Windows 11.  
+
 Numerous package requirements exist, including but not limited to: 
 `numpy`, `pandas`, `matplotlib`, `scipy`, `operator`, `IPython`, 
-`random`, `itertools`, `math`, `pickle`, `joblib`, `seaborn`, and `statsmodels`.
+`random`, `itertools`, `math`, `pickle`, `joblib`, `seaborn`, and `statsmodels`. 
+For configuration details, please refer to the conda environment manifest file `environment.yml`.
 
 To meet GitHub's file size limit, in the `results/` directory, raw output data files, 
 e.g., `toy3.pkl`, are compressed and split. 
