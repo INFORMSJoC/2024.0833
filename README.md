@@ -46,12 +46,12 @@ The structure of this repository is as follows:
   - `results/figures/`: The directory storing the figures included in the paper.
 
 ## Requirements
-The code is tested in the environment of python 3.12.4 with Windows 11.  
+The code is tested in the environment of Python 3.12.4 with Windows 11.  
 
 Numerous package requirements exist, including but not limited to: 
 `numpy`, `pandas`, `matplotlib`, `scipy`, `operator`, `IPython`, 
 `random`, `itertools`, `math`, `pickle`, `joblib`, `seaborn`, and `statsmodels`. 
-For configuration details, please refer to the conda environment manifest file `environment.yml`.
+For configuration details, please refer to the conda environment manifest file `scripts/environment.yml`.
 
 To meet GitHub's file size limit, in the `results/` directory, raw output data files, 
 e.g., `toy3.pkl`, are compressed and split. 
@@ -62,11 +62,11 @@ before previewing or analyzing them.
 We provide detailed implementation guidances and demonstrate results 
 in the `scripts/` directory. It suffices just to run each notebook (you can execute cells individually). 
 We have generated all the data used in the paper——no external data sources are required. 
-- `Toy_2D.ipynb` and `Toy_20D.ipynb`: The python notebooks containing implementation guidances
+- `Toy_2D.ipynb` and `Toy_20D.ipynb`: The Python notebooks containing implementation guidances
 for reproducing the results in the **toy examples**;
-- `portfolio_negative.ipynb` and `portfolio_positive.ipynb`: The python notebooks containing implementation guidances
+- `portfolio_negative.ipynb` and `portfolio_positive.ipynb`: The Python notebooks containing implementation guidances
 for reproducing the results in the **nonlinear portfolio** example;
-- `portfolio_allocate.ipynb`: The python notebook containing implementation guidances
+- `portfolio_allocate.ipynb`: The Python notebook containing implementation guidances
 for reproducing the results in the **portfolio asset allocation** example.
 
 The following raw output data files are compressed and stored in the `results/` directory:
